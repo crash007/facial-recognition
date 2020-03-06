@@ -1,0 +1,17 @@
+aws
+1 face
+Females: 162
+Males: 32
+
+multi:
+females:312
+males:212
+
+
+azure:
+Males: 26
+Females: 141
+
+Multi males: 163
+Multi females: 255
+
