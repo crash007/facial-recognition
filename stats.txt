@@ -7,6 +7,16 @@ multi:
 females:312
 males:212
 
+bigger images:
+Multi:
+Females: 281
+Males: 191
+
+Single:
+Females: 150
+Males: 31
+----
+
 
 azure:
 Males: 26

@@ -1,5 +1,5 @@
 const AWS = require('aws-sdk')
-const bucket = 'st-big1' 
+const bucket = 'wattertmp' 
 
 const config = new AWS.Config({
     region: 'eu-west-1'
@@ -10,7 +10,7 @@ const client = new AWS.Rekognition({
 });
 
 var s3params = {
-    Bucket: "st-big1",
+    Bucket: "wattertmp",
 };
 
 var females = 0;
@@ -44,7 +44,7 @@ function detectFaces(filename) {
         } else {
             console.log(`Detected faces for: ${filename}`)
             console.log('Number of faces is ' + response.FaceDetails.length)
-            if (response.FaceDetails.length > 1) {
+            if (response.FaceDetails.length == 1) {
                 response.FaceDetails.forEach(data => {
                     let low = data.AgeRange.Low
                     let high = data.AgeRange.High
